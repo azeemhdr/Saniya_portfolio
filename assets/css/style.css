@@ -42,3 +42,11 @@ a{
   .c-btn{
 	padding: 12px 40px!important;
   }
+
+  .h-about{
+	background-image: url(../images/site/home-about.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	/* background-position: center; */
+  }
