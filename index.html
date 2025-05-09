@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -46,12 +47,12 @@
 			</div>
 		</nav>
 	</header>
-	<section class="hero bg-secondary position-relative">
+	<section class="hero bg-secondary position-relative" data-aos="zoom-out" data-aos-duration="1000">
 		<div class="overlay position-absolute"></div>
 		<div class="container h-100 position-relative z-1">
 			<div class="row align-items-center h-100">
 				<div class="col-md-8">
-					<h1 class="text-white display-1 fw-bold">
+					<h1 class="text-white display-1 fw-bold" data-aos="zoom-in" data-aos-duration="1000" >
 						SPORT PSYCHOLOGY<span class="typing text-warning"></span>
 					</h1>
 					<h3 class="text-danger">Performance With Growth</h3>
@@ -80,7 +81,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section">
+	<section class="section" data-aos="zoom-in-up" data-aos-duration="1500">
 		<div class="container">
 			<div class="sec-heading text-center mb-5">
 				<h2 class="fw-semibold text-danger">Our Services </h2>
@@ -88,7 +89,7 @@
 					programs.</p>
 			</div>
 			<div class="row gap-3 gap-md-0">
-				<div class="col-md-4">
+				<div class="col-md-4" data-aos="fade-up" data-aos-duration="2000">
 					<div class="card text-center shadow">
 						<img src="assets/images/site/service-card1.svg" class="card-img-top img-fluid w-50 m-auto"
 							alt="...">
@@ -104,7 +105,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4" data-aos="fade-down" data-aos-duration="2000">
 					<div class="card text-center shadow">
 						<img src="assets/images/site/service-card2.svg" class="card-img-top img-fluid w-50 m-auto"
 							alt="...">
@@ -120,7 +121,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4" data-aos="fade-up" data-aos-duration="2000">
 					<div class="card text-center shadow">
 						<img src="assets/images/site/service-card3.svg" class="card-img-top img-fluid w-50 m-auto"
 							alt="...">
@@ -142,10 +143,11 @@
 	<section class="section position-relative h-about">
 		<div class="overlay position-absolute"></div>
 		<div class="container position-relative z-1">
-			<p class="text-center text-light px-5 lh-lg">It’s the final minute of the game. The crowd is roaring. Your heart’s
+			<p class="text-center text-light px-5 lh-lg  ">It’s the final minute of the game. The crowd is roaring. Your
+				heart’s
 				pounding. You’ve trained for this moment — and your mind is calm, clear, ready. That’s the power of
 				sport psychology, turning pressure into power. Let’s get you there.</p>
-			
+
 			<div class="text-center mt-4">
 				<a href="#" class="btn c-btn btn-danger ">About</a>
 			</div>
@@ -203,9 +205,14 @@
 			<a class="text-reset fw-bold" href="#">SPORTPHYCHOLOGY.COM</a>
 		</div>
 	</footer>
-
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="assets/js/script.js"></script>
+	<script>
+		AOS.init();
+	</script>
+
+
 </body>
 
 </html>
