@@ -100,3 +100,7 @@ a{
 	max-height: 550px;
 	object-fit: cover;
   }
+
+  .mobile_number{
+	font-size: 14px;
+  }
