@@ -131,3 +131,17 @@ a {
 .blog-date{
 	font-size: 12px;
 }
+
+.blog-banner{
+  background-image: url('../images/site/phychology_banner.jpg');
+}
+.swiper-button-prev,.swiper-button-next{
+  width: calc(var(--swiper-navigation-size)/ 20* 20);
+  border-radius: 50%;
+  background-color: #dc3545;
+  color: #eaedf0;
+}
+
+.swiper-button-prev::after,.swiper-button-next::after{
+  font-size: 14px;
+}
