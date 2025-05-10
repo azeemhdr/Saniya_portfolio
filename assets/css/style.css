@@ -1,106 +1,126 @@
 .header {
-	width: 100%;
-	top: 0;
-	z-index: 999;
-	transition: all 0.3s ease-in-out;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+}
+
+.header.fixed {
+  position: fixed;
+  top: 0;
+  background-color: white; /* Or any solid color */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.4s ease-in-out;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
   }
-
-  .header.fixed {
-	position: fixed;
-	top: 0;
-	background-color: white; /* Or any solid color */
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-	animation: slideDown 0.4s ease-in-out;
+  100% {
+    transform: translateY(0);
   }
-
-  @keyframes slideDown {
-	0% {
-	  transform: translateY(-100%);
-	}
-	100% {
-	  transform: translateY(0);
-	}
-  }
-
-.nav-link:hover{
-color: #dc3545!important;
-}
-.nav-item{
-	padding: 0px 4px;
-	font-weight: 600;
-}
-.hero{
-background-image: url('../images/site/hero.jpg');
-padding: 60px 0px;
-/* filter: grayscale(1); */
-height: 75vh;
 }
 
-.section{
-	padding:60px 0px;
+.nav-link:hover {
+  color: #dc3545 !important;
 }
-a{
-	text-decoration: none;
+.nav-item {
+  padding: 0px 4px;
+  font-weight: 600;
+}
+.hero {
+  background-image: url("../images/site/hero.jpg");
+  padding: 60px 0px;
+  /* filter: grayscale(1); */
+  height: 75vh;
 }
 
-.overlay{
-	inset: 0 0 0 0;
-	background-color: #00000080;
+.section {
+  padding: 60px 0px;
+}
+a {
+  text-decoration: none;
+}
+
+.overlay {
+  inset: 0 0 0 0;
+  background-color: #00000080;
 }
 
 .typing {
-	border-right: .15em solid white;
-	white-space: nowrap;
-	overflow: hidden;
-	display:block;
-	text-align: center;
-	width: 0;
-	animation:
-	  typing 3s steps(22, end) forwards,
-	  blink .75s step-end infinite ;
-  }
-  
-  @keyframes typing {
-	from { width: 0 }
-	to { width: 12ch } /*Adjust this based on text length */
-  }
-  
-  @keyframes blink {
-	from, to { border-color: transparent }
-	50% { border-color: white }
-  }
+  border-right: 0.15em solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  width: 0;
+  animation: typing 3s steps(22, end) forwards, blink 0.75s step-end infinite;
+}
 
-  .c-btn{
-	padding: 12px 40px!important;
+@keyframes typing {
+  from {
+    width: 0;
   }
+  to {
+    width: 12ch;
+  } /*Adjust this based on text length */
+}
 
-  .h-about{
-	background-image: url(../images/site/home-about.jpg);
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	/* background-position: center; */
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
   }
-
-  /*======================================================= ABOUT PAGE ================================================================= */
-  .about-banner{
-	background-size:cover;
-	background-position: bottom;
-	max-height: 300px;
-	background-repeat: no-repeat;
-
+  50% {
+    border-color: white;
   }
+}
 
-  .about-section{
-	background-color: #e1ebf5;	
-  }
+.c-btn {
+  padding: 12px 40px !important;
+}
 
-  .about-img{
-	width: 100%;
-	max-height: 550px;
-	object-fit: cover;
-  }
+.h-about {
+  background-image: url(../images/site/home-about.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+}
 
-  .mobile_number{
-	font-size: 14px;
-  }
+/*======================================================= ABOUT PAGE ================================================================= */
+.about-banner {
+  background-size: cover;
+  background-position: bottom;
+  max-height: 300px;
+  background-repeat: no-repeat;
+}
+
+.about-section {
+  background-color: #e1ebf5;
+}
+
+.about-img {
+  width: 100%;
+  max-height: 550px;
+  object-fit: cover;
+}
+/* ==============================================================contact-form================================================== */
+.mobile_number {
+  font-size: 14px;
+}
+/* ==============================================================Blog================================================== */
+.slide-img-link {
+  overflow: hidden;
+}
+.slide-img {
+  transition: 500ms ease-in-out;
+}
+.slide-img-wrapper:hover .slide-img {
+  transform: scale(1.5);
+}
+
+.blog-date{
+	font-size: 12px;
+}

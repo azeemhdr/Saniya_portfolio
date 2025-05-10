@@ -2,6 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	includeHTML('header', 'header.html');
 	includeHTML('footer', 'footer.html');
 	includeHTML('contact-form','contact.html')
+	includeHTML('blog-section','blogSection.html')
   });
   
   function includeHTML(id, file) {
@@ -12,6 +13,10 @@ window.addEventListener('DOMContentLoaded', () => {
 	  })
 	  .then(data => {
 		document.getElementById(id).innerHTML = data;
+
+		if(id==="blog-section"){
+			initBlogSwiper();
+		}
 	  })
 	  .catch(error => {
 		console.error(error);
@@ -30,3 +35,17 @@ window.addEventListener('scroll', function () {
 
 //  ==============================AOS script======================
 AOS.init();
+
+// ==================================blogs js==============================
+function initBlogSwiper(){
+const swiper = new Swiper('.blog-slider',{
+	loop:true,
+	speed:1000,
+	spaceBetween:20,
+	slidesPerView:3,
+	navigation: {
+		nextEl:'.swiper-button-next',
+		prevEl:'.swiper-button-prev',
+	},
+	});
+}
