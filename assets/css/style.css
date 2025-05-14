@@ -21,7 +21,10 @@
     transform: translateY(0);
   }
 }
-
+.logo-img{
+  object-fit: contain;
+  max-height: 60px;
+}
 .nav-link:hover {
   color: #dc3545 !important;
 }
@@ -33,7 +36,8 @@
   background-image: url("../images/site/hero.jpg");
   padding: 60px 0px;
   /* filter: grayscale(1); */
-  height: 75vh;
+  /* min-height: 75vh; */
+  height: auto;
 }
 
 .section {
@@ -91,6 +95,13 @@ a {
 
 .footer{
 	background-color: #121213!important;
+}
+
+.social ul{
+  list-style: none;
+  display: flex;
+  padding: 0;
+  font-size: 24px;
 }
 .copyright{
 	background-color: #dc3545 !important;
