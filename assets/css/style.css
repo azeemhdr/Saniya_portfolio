@@ -40,6 +40,10 @@
   height: auto;
 }
 
+.hero-quote{
+  background-color: #121213c2;
+}
+
 .section {
   padding: 60px 0px;
 }
