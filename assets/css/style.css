@@ -12,6 +12,12 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   animation: slideDown 0.4s ease-in-out;
 }
+@media (max-width: 991px){
+.c-logo-wrapper{
+  display: contents!important;
+}
+
+}
 
 @keyframes slideDown {
   0% {
