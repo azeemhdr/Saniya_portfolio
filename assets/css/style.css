@@ -116,6 +116,7 @@ a {
   background-size: cover;
   background-position: bottom;
   max-height: 300px;
+  min-height: 250px;
   background-repeat: no-repeat;
 }
 
